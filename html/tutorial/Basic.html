@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+
+<head>
+<title>HTML Learning</title>
+<link rel="icon" type="png" href="icon.png">
+<h1 class="table" style = "text-align: center;">HTML Learning</h1>
+<meta charset="UTF-8">
+<meta name="description" content="none">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="author" content="Shirley Yip">
+</head>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- <style>
+  body{color:grey}
+
+</style> -->
+
+<body>
+<hr>Content<hr>
+<ol start="1">
+<li><a href="#basicsyntax">Basic Syntax</a></li>
+<li><a href="#stylesetting">Style setting</a></li>
+<li><a href="#image">Image setting with link</a></li>
+<li><a href="#htmlformatting">HTML Fromatting Element</a></li>
+<li><a href="#quatation">Qutation and Citation Element</a></li>
+<li><a href="#game">Game</a></li>
+<li><a href="#game"><Table></Table></a></li>
+</ol>
+
+
+<hr id="basicsyntax">Basic Syntax<hr>
+<p>This <br>is paragraph</p>
+<pre>
+My Bonnie lies over the ocean.
+
+My Bonnie lies over the sea.
+
+My Bonnie lies over the ocean.
+
+Oh, bring back my Bonnie to me.
+</pre>
+
+
+<hr id="stylesetting">Style setting<hr>
+<p style="color:white;background-color:black; font-family:verdana; font-size: 150%;text-align:center">This is paragraph</p>
+
+
+<hr id="image">Image setting with link<hr>
+<a href="https://www.w3schools.com" target="_blank" title="Go to W3Schools website"><img src="w3schools.png" alt="W3Schools.com" width="104" height="120" ></a>
+<a  href="mailto:abc1c1sam@gmail.com" id = "emailme" target="_blank">Email Me</a>
+
+
+<hr id="htmlformatting">HTML Fromatting Element<hr>
+<b>This is bold</b><br>
+<strong>This is strong</strong><br>
+<i>This is italic</i><br>
+<em>This is emphasized</em><br>
+<small>This is small text</small>
+<p>This is <mark>mark</mark></p>
+<p>This is <del>delete</del></p>
+<p>This is <ins>ins element</ins></p>
+<p>This is <sub>subscripted</sub> element</p>
+<p>This is <sup>supscripted</sup> element</p>
+
+<hr id="quatation">Qutation and Citation Element<hr>
+<p>Here is a quoate from WWF's website</p>
+<blockquote cite="http://www.worldwildlife.org/who/index.html" >
+  For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF
+  works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver
+  innovative solutions that protect communities, wildlife, and the places in which they live.
+</blockquote>
+<p>WWF' goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+<p><cite>The scream</cite> by Edvard Munch. Painted in 1893</p>
+<bdo dir="rtl">This line will be written from right to left</bdo>
+
+
+<hr id="game" >Game<hr>
+<!-- It is hard to find coords of picture -->
+<!-- <img src="game.png" alt="color game" usemap="colormap" width="220px" height="213px">
+<map name="colormap">
+  <area shape="circle" coords="49,54,45" id="49,54,45" onclick="detectColor(id)">
+</map>
+
+<script>
+  function detectColor(coords){
+    alert("hello");
+    console.log(coords);
+  }
+
+</script> -->
+<p id="color">Please click the ball</p>
+<hr>Table<hr>
+<button onclick="myFunction()">Hide table</button>
+<script>
+  function myFunction() {
+    var x= document.getElementsByClassName("table");
+    for(var i=0; i<x.length; i++){
+      x[i].style.display="none";
+    }
+  }
+</script>
+<noscript>Sorry, your brower does not support JavaScript</noscript>
+<table class="table">
+  <tr>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Gender</th>
+</tr>
+<tr>
+  <td>Nancy</td>
+  <td>Yip</td>
+  <td>Female</td>
+</tr>
+<tr>
+  <td>Tom</td>
+  <td>Ng</td>
+  <td>Male</td>
+</tr>
+<tr>
+  <td>Billy</td>
+  <td>Ng</td>
+  <td>Male</td>
+</tr>
+</table>
+
+
+<hr>Iframe<hr>
+<iframe src="https://www.w3schools.com/" title="w3website">w3schools.com</iframe>
+
+
+
+<hr>Form<hr>
+<form action="/action_page.php">
+  <lable for="fname">First name</lable>
+  <input type="text" id="fname" name="fname"><br>
+  <br>
+
+  <label for="lname">Last name</lale>
+  <input type="text" id="lname" name="fname"><br>
+  <br>
+
+  <input type="radio" id="male" name="fav_language" value="male">
+  <label for ="gender">Male</label><br>
+  <input type="radio" id="female" name="fav_language" value="female">
+  <label for ="gender" >Female</label><br>
+  <br>
+
+  <label for="major">Choose a major</label>
+  <select id="major" name="major" size="4" multiple>
+    <option value="Arts">Arts</option>
+    <option value="Engineering">Engineering</option>
+    <option value="Science">Science</option>
+  </select><br>
+  <p>Any message leave here:</p>
+  <textarea name="message" row ="10" cols="30"></textarea><br>
+
+  <br>
+    <input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>
+
+
